@@ -1,0 +1,21 @@
+.boton-grafico{
+
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to top, rgb(231, 231, 232),rgb(172, 172, 172));
+    margin-bottom: 2vh;
+
+    text-align: center;
+    align-content: center;
+    font-size: 2.2rem;
+    transition: 10s ;
+    cursor: pointer;
+}
+
+.boton-grafico:hover{
+
+   
+    background: linear-gradient(to top, rgb(167, 167, 244),rgb(110, 84, 241));
+
+
+}
