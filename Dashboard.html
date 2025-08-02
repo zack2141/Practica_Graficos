@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,35 @@
     <link rel="stylesheet" href="estilo_Navegador.css">
     <link rel="stylesheet" href="estilo_Dashboard.css">
 </head>
+
 <body>
 
     <nav>
         <a href=""> </a>
     </nav>
 
-    
-    <div class="boton-grafico" onclick="redirect_barra()"> Ir al grafico de barra</div>
-    <div class="boton-grafico" onclick="redirect_torta()"> Ir al grafico de Torta</div>
-    <div class="boton-grafico" onclick="redirect_linea()"> Ir al grafico de Linea</div>
-    <div class="boton-grafico" onclick="redirect_area()"> Ir al grafico de Area</div>
-    
+    <section id="graficos_charts" class="tamano_secciones_graficos">
+        <h1>Grficos Chart.js</h1>
+        <div class="boton-grafico" onclick="redirect_barra_chart()"> Ir al grafico de barra</div>
+        <div class="boton-grafico" onclick="redirect_torta_chart()"> Ir al grafico de Torta</div>
+        <div class="boton-grafico" onclick="redirect_linea_chart()"> Ir al grafico de Linea</div>
+        <div class="boton-grafico" onclick="redirect_area_chart()"> Ir al grafico de Area</div>
+
+    </section>
+    <section id="graficos_google" class="tamano_secciones_graficos">
+
+        <h1>Grficos Google</h1>
+        <div class="boton-grafico" onclick="redirect_barra_google()"> Ir al grafico de barra</div>
+        <div class="boton-grafico" onclick="redirect_torta_google()"> Ir al grafico de Torta</div>
+        <div class="boton-grafico" onclick="redirect_linea_google()"> Ir al grafico de Linea</div>
+        <div class="boton-grafico" onclick="redirect_area_google()"> Ir al grafico de Area</div>
+
+    </section>
+
+
+
 
     <script src="Controlador_Dashboard.js"></script>
 </body>
+
 </html>
