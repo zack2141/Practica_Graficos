@@ -53,4 +53,10 @@ function redirect_area_google(){
 
 }
 
+function redirect_tabla(){
+
+    window.location="Tabla/index.html";
+
+}
+
 
