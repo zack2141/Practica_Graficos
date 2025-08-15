@@ -2,7 +2,7 @@ function grafico_Linea(){
 
     const ctx = document.getElementById('myChart')
 
-    const labelst=['Eólica', 'solar', 'Geotermica']
+    const labelst=['solar', 'Eolica', 'hidrica']
 
     const titulos=year()
 

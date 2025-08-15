@@ -3,7 +3,7 @@ function grafico_torta(){
 
     const ctx = document.getElementById('myChart')
     const titulos=['hidrica','solar','eolica']
-    const valores=[230.0,150.0,268.0]
+    const valores=[230.0 ,150.0 , 268.0]
     const colores=['#5975ff','#fff94a','#e6e5dc']
     const bordes=['#ada799']
 

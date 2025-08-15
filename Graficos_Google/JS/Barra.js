@@ -1,38 +1,38 @@
+function grafico_barra() {
 
-function grafico_barra(){
+  google.charts.load("current", { packages: ["corechart"] });
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ["Element", "Density", { role: "style" }],
+      ["Copper", 8.94, "#b87333"],
+      ["Silver", 10.49, "silver"],
+      ["Gold", 19.30, "gold"],
+      ["Platinum", 21.45, "color: #e5e4e2"]
+    ]);
 
-    //  donde se va a representar nuestro grafico
-    const ctx = document.getElementById('myChart');
+    var view = new google.visualization.DataView(data);
+    view.setColumns([0, 1,
+      {
+        calc: "stringify",
+        sourceColumn: 1,
+        type: "string",
+        role: "annotation"
+      },
+      2]);
 
-   // inico de nuestro grafico
-  new Chart(ctx, {
-    type: 'bar',
-    // toda la informacion para representar el grafico
-    data: {
-        // titulos de cada barra
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
+    var options = {
+      title: "Density of Precious Metals, in g/cm^3",
+      width: 600,
+      height: 400,
+      bar: { groupWidth: "95%" },
+      legend: { position: "none" },
+    };
+    var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+    chart.draw(view, options);
+  }
 
-        label: '# of Votes',
-        // los datos segun los titulos establecidos
-        data: [12, 5, 3, 5, 2, 3],
-        borderWidth: 3,
-        backgroundColor:['#d41515ff','#1900fcff','#ffea04ff','#32f800ff', ' #6f10ebff','#eba610ff'],
-        borderColor: ['#000000ff'],
-      }]
-    },
-
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
 
 }
 
-
-grafico_barra() /* inicialización del js una vez se cargue la pagina html*/
-
+grafico_barra()

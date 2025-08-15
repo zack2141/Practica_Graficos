@@ -3,7 +3,7 @@ function grafico_barra(){
 
     //  donde se va a representar nuestro grafico
     const ctx = document.getElementById('myChart');
-
+    const colores = ['#d41515ff','#1900fcff','#ffea04ff','#32f800ff', ' #6f10ebff','#eba610ff']
    // inico de nuestro grafico
   new Chart(ctx, {
     type: 'bar',
@@ -17,7 +17,7 @@ function grafico_barra(){
         // los datos segun los titulos establecidos
         data: [12, 5, 3, 5, 2, 3],
         borderWidth: 3,
-        backgroundColor:['#d41515ff','#1900fcff','#ffea04ff','#32f800ff', ' #6f10ebff','#eba610ff'],
+        backgroundColor: colores,
         borderColor: ['#000000ff'],
       }]
     },

@@ -31,7 +31,7 @@ function grafico_Linea() {
                 backgroundColor: coloresSolar,// da color a las porciones
                 borderColor: bordesSolar,
                 borderWidth: 1.5,
-                //llena el espacion entre la linea de origen hacia abajo
+                //llena el espacio entre la linea de origen hacia abajo
                 fill: {
                     target: 'origin',
                     above: 'rgb(255, 0, 0, 0.4)',   // Area will be red above the origin

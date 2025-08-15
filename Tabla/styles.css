@@ -1,0 +1,58 @@
+
+
+
+#tabla{
+    background-color: rgb(241, 241, 241);
+    width: 99.5% !important;
+    height: 70vh !important;
+
+}
+
+
+/* tabla*/
+/*tabla*/
+
+#tabulacion{
+    margin-left: 10%;
+    width: 80%;
+    height: 60vh;
+    overflow-y:auto ;
+    margin-bottom: 2%;
+    border: solid black;
+    margin-top: 2%;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+
+
+thead {
+
+    background-color: #9a9898;
+    color: #dee2e6 !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+
+th{
+    border: 1px solid black;
+    cursor: pointer;
+    color: #000000;
+}
+
+tr:hover, th:hover{
+    background: rgb(162, 158, 158);
+}
+
+
+
+
+
+
